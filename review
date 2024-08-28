@@ -1,0 +1,21 @@
+public class Day_001 {
+
+	public static void main(String[] args) {
+		/*
+		 long을 제외한 정수 타임 연산은 int 타입으로 산출되고,
+		 피연산자 중 하나라도 실수 타입이면 실수 타입으로 산출된다.
+		 위 내용에 의하면 다음 코드는 컴파일 에러가 발생한다.
+		 */
+		byte byte1 = 1;
+		byte byte2 = 1;
+		byte byte3 = byte1 + byte2; // byte타입의 변수끼리 연산할 때는
+									// 정수형으로 변환되어 연산함
+		int result1 = byte1 + byte2; // 이와 같이 수정해야함
+	//다음 코드에서 최종적으로 변수에 저장되는 값이 무엇인지 생각하세요.
+		int int1 = 10;
+		int int2 = 4;
+		int result2 = int1 / int2;  // result2에는 무슨값?  2
+		double result3 = int1 / int2; // result3에는 무슨값? 2.0 
+	}
+
+}
