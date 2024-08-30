@@ -1,0 +1,18 @@
+public class Day_003 {
+
+	public static void main(String[] args) {
+		int score = 95;
+		char grade = (score > 90) ? 'A' : 'B';    //참 A 거짓 B
+		System.out.println("학점 :" + grade);
+		// 위 문단에서 3항연산자로 만들어진 코드는 if문은 이용한 코드로 변경할수있다.
+		int score2 = 95;
+				char grade2 = 'X';
+		if (score2 > 90) {
+			grade2 = 'A';
+		} else {
+			grade2 = 'B'; 
+		}
+		System.out.println("학점2 :" + grade2);
+	}
+
+}
