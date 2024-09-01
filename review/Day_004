@@ -1,0 +1,21 @@
+public class Day_004 {
+
+	public static void main(String[] args) {
+		char c1 = 'A' + 1; // 이것은 에러 아님, 리터럴 끼리의 연산에는 형변환이 없다.
+					             // 'A' + 1 에 해당하는 유니코드 65 + 1
+		char c2 = 'A';
+    //char c3 = c2 + 1;  // 이것은 에러임
+		// c2 변수 , 변수와 리터럴 간의 연산, 변수가 형변환이 일어남
+		//c2가 int 타입으로 변환됨 int 타입의 c2와 int타입의 정수 1을 더해서
+		// char타입의 c3에 할당한다는 개념으로 해석되기 때문에 에러가 발생하였다.
+		char c3 = (char)(c2 + 1);
+		System.out.println("c1 : " + c1);
+		System.out.println("c2 : " + c2);
+		System.out.println("c3 : " + c3);
+	}
+}
+/* char타입의 변수를 연산하기
+ * char타입의 변수 정수타입에 속합니다. 따라서 char타입의 변수도 연산이 가능하다.
+ * 주의사항: char타입이 산술연산의 피연산자가 될 경우에는 int 타입으로
+ * 변하되므로 산출타입( 연산결과 형식) 은 int 타입이다.
+ */
