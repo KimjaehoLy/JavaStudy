@@ -1,0 +1,11 @@
+public class Day07_10 {
+	public static void main(String[] args) {
+				byte num1 = 45;
+				byte num2 = 25;
+				int result = num1 & num2; 
+				//
+				System.out.println("result : " + result);  // 실행결과는 9입니다.
+					// 왜 9가 나왔을 까요?
+					// 서로 이진수로 바꿔서 논리곱을 하고 십진수로 바꾸면 9
+	}
+}
