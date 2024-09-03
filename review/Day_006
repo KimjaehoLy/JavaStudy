@@ -1,0 +1,10 @@
+public class Day096 {
+	public static void main(String[] args) {
+		int score = 85;
+		char grade = (score > 90) ? 'A' :( (score > 80) ? 'B' : 'C');
+			// 이코드를 분석하면 다음과 같습니다. : 삼항연산자의 연산식(줄임말: 삼항연산식)의
+			// 3번째 항에 또 다른 삼항연산식이 올 수 있습니다.
+			// 이코드는 이후에 설명할 중첩if문의 구성과 대응합니다.
+		System.out.println(score + "점은" + grade + " 등급입니다");
+	}
+}
