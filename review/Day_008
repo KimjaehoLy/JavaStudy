@@ -1,0 +1,25 @@
+public class Day_008 {
+
+	public static void main(String[] args) {
+		int num = (int)(Math.random()*6) +1; // 난수발생기 관용어구
+			// Math.random 메소드를 이용하여 1부터 6까지 의 숫자 중 하나를 추출함.
+			// 메소드는 0.0이상에서 1.0초 미만에 속하는 double형식의 난수를 하나 리턴함.
+			// 0.0 <= Math.random() < 1.0의 개념임
+			// random() 로 추출된 결과값이 더블형이므로 이를 정수형으로 
+			// 강제 형변환(int)하였음.
+			// 또다른 예 로또번호 추출 : int num = (int) (Math.random() * 45) + 1;
+		if (num == 1) {
+			System.out.println("1번이 나왔습니다.");
+		} else if (num == 2 ) {
+			System.out.println("2번이 나왔습니다.");
+		} else if (num == 3 ) {
+			System.out.println("3번이 나왔습니다.");
+		} else if (num == 4 ) {
+			System.out.println("4번이 나왔습니다.");
+		} else if (num == 5 ) {
+			System.out.println("5번이 나왔습니다.");
+		} else if (num == 6 ) {
+		System.out.println("6번이 나왔습니다.");
+		}
+	}
+}
