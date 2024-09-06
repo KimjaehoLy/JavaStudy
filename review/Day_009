@@ -1,0 +1,19 @@
+public class Day_009 {
+	public static void main(String[] args) {
+		char grade = 'A';
+		switch (grade) {
+		case 'a':	// switch case 문의 논리OR조건식 구현
+		case 'A':	// 의도적으로 case절에 종속문장과 break:문을 생략하면
+					// 마치 if 문의 조건식에서 grade == 'A' || grade == 'a')
+					// 와 같이 논리 연산자와 관계연산자의 복합 조건식으로 해석된다.
+			System.out.println("우수 회원입니다.");
+			break;
+		case 'B':
+		case 'b':
+			System.out.println("일반 회원입니다.");
+			break;
+			default:
+				System.out.println("손님 입니다.");
+		}
+	}
+}
